@@ -8,7 +8,7 @@ const Home = () => {
 
       <main className="pt-20">
         <section id="inicio">
-          {/* … tu hero … */}
+          <HeroSection/>
         </section>
         <section id="servicios">
           {/* … tus servicios … */}

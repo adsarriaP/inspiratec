@@ -1,5 +1,3 @@
-import React from 'react';
-import { ArrowRightIcon } from '@heroicons/react/24/outline';
 
 const HeroSection = () => {
     return (

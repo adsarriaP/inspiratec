@@ -1,4 +1,3 @@
-// src/components/Navbar.tsx
 import { useState } from 'react';
 import type { FC } from 'react';
 import { Transition } from '@headlessui/react';
