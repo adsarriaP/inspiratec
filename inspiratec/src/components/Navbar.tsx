@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import type { FC } from 'react';
+import { Link } from 'react-router-dom';
 import { Transition } from '@headlessui/react';
 
 const Navbar: FC = () => {
@@ -31,6 +32,13 @@ const Navbar: FC = () => {
           >
             Contacto
           </a>
+          <Link
+            to="/login"
+            className="px-4 py-2 border-2 border-inspiraPurple text-inspiraPurple rounded-full hover:bg-inspiraPurple hover:text-white transition flex items-center gap-2"
+          >
+            <i className="fas fa-sign-in-alt"></i>
+            Iniciar Sesión
+          </Link>
         </nav>
 
         <button
@@ -76,6 +84,16 @@ const Navbar: FC = () => {
               >
                 Contacto
               </a>
+            </li>
+            <li>
+              <Link
+                to="/login"
+                className="block px-4 py-2 border-2 border-inspiraPurple text-inspiraPurple rounded-full text-center hover:bg-inspiraPurple hover:text-white transition"
+                onClick={() => setIsOpen(false)}
+              >
+                <i className="fas fa-sign-in-alt mr-2"></i>
+                Iniciar Sesión
+              </Link>
             </li>
           </ul>
         </nav>
